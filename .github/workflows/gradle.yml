@@ -24,5 +24,5 @@ jobs:
 
       - name: Build with Gradle Wrapper
         env:
-          CONFIG_EXAMPLE_VALUE: ${{ secrets.CONFIG_EXAMPLE_VALUE }}
+          CONFIG_EXAMPLE_VALUE: ${{ vars.CONFIG_EXAMPLE_VALUE }}
         run: ./gradlew clean build --no-daemon --info
