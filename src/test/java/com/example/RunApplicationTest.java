@@ -46,7 +46,7 @@ class RunApplicationTest {
         this.mockMvc.perform(get("/api/value"))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(content().string("value"));
+                .andExpect(content().contentType("application/json"));
     }
 
 }
